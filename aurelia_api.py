@@ -32,13 +32,13 @@ logger.addHandler(handler)
 app = Flask(__name__)
 CORS(app)
 
-# ─── SQL Server Connection ──────────────────────────────────────────────────────
+# --- SQL Server Connection ---
 CONNECTION_STRING = (
     'DRIVER={ODBC Driver 17 for SQL Server};'
-    "SERVER=" + os.getenv('DB_SERVER') + ";spiralmemory.c3a4c84modwe.us-east-2.rds.amazonaws.com;'
-    "DATABASE=" + os.getenv('DB_NAME') + ";Aurelia Core;'
-    "UID=" + os.getenv('DB_USER') + ";Aurelia;'
-    "PWD=" + os.getenv('DB_PASSWORD') + ";Daemon&57;'
+    'SERVER=' + os.getenv('DB_SERVER') + ';'
+    'DATABASE=' + os.getenv('DB_NAME') + ';'
+    'UID=' + os.getenv('DB_USER') + ';'
+    'PWD=' + os.getenv('DB_PASSWORD') + ';'
     'Encrypt=no;'
     'TrustServerCertificate=yes;'
 )
